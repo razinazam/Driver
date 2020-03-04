@@ -38,6 +38,8 @@ target 'Driver' do
 
   pod 'react-native-mapbox-gl', :path => '../node_modules/@mapbox/react-native-mapbox-gl'
 
+  pod 'react-native-geolocation', :path => '../node_modules/@react-native-community/geolocation'
+
   target 'DriverTests' do
     inherit! :search_paths
     # Pods for testing

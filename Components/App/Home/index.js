@@ -30,28 +30,12 @@ function index(props) {
     <View>
       <Map />
       <PaymentModal />
-      {DriverPopup == true ? (
-        <DriverPopuprecive />
-      ) : (
-        <React.Fragment></React.Fragment>
-      )}
+      {DriverPopup === true ? <DriverPopuprecive /> : <React.Fragment />}
       <DriverOrderDetails />
-      {ResturantLocatio == true ? (
-        <ResturantLocation />
-      ) : (
-        <React.Fragment></React.Fragment>
-      )}
-      {SuccessCard == true ? (
-        <Successcard />
-      ) : (
-        <React.Fragment></React.Fragment>
-      )}
+      {ResturantLocatio === true ? <ResturantLocation /> : <React.Fragment />}
+      {SuccessCard === true ? <Successcard /> : <React.Fragment />}
       <SuccessCardDEtials />
-      {Customer_Location == true ? (
-        <CustomerLocation />
-      ) : (
-        <React.Fragment></React.Fragment>
-      )}
+      {Customer_Location === true ? <CustomerLocation /> : <React.Fragment />}
     </View>
   );
 }

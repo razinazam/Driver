@@ -182,10 +182,14 @@ android {
 }
 
 dependencies {
+    implementation project(':@react-native-mapbox-gl_maps')
+    implementation project(':@react-native-community_geolocation')
     implementation project(':react-native-maps')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
     // implementation project(':mapbox-react-native-mapbox-gl')
+
+
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
